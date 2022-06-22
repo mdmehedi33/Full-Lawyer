@@ -1,0 +1,362 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(51, 65, 124);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner {
+    background-image: url("../images/banner.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.height {
+    min-height: 88vh;
+    align-items: center;
+}
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.banner_icon {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+    animation: 0.9s linear 0s infinite alternate none running updown;
+}
+
+@keyframes updown {
+    0% {
+        top: 75%;
+    }
+
+    100% {
+        top: 85%;
+    }
+}
+
+.banner_icon i {}
+
+.who {
+    margin: 100px 0px;
+}
+
+.who span {
+    display: block;
+    height: 4px;
+    width: 55px;
+    background-color: rgb(228, 79, 33);
+}
+
+.who h1 {
+    color: rgb(51, 65, 124);
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
+.who p {
+    color: rgb(186, 181, 178);
+}
+
+.what {
+    background: url("../images/lawyer_bg.png") right bottom / 67% no-repeat rgb(251, 251, 251);
+    padding: 70px 0px;
+}
+
+.what span {
+    display: block;
+    background: rgb(228, 79, 36);
+    height: 4px;
+    width: 60px;
+    margin: auto;
+}
+
+.what h1 {
+    color: rgb(51, 65, 124);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 16px;
+}
+
+.item_img {
+    position: relative;
+}
+
+.item_img::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(41, 137, 216, 0) 0%, rgba(57, 29, 117, 0.89) 66%, rgb(57, 29, 117) 74%);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.item_img:hover::before {
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.item_img:hover .content {
+    opacity: 1;
+    top: 50%;
+}
+
+.content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.arrow_icon {
+    position: absolute;
+    left: 45%;
+    bottom: 60px;
+    transform: translate(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.item_img:hover .arrow_icon {
+    opacity: 1;
+    left: 50%;
+}
+
+.our_Attorneys {
+    background-image: url("../images/bg-pro.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.attorneys span {
+    display: block;
+    height: 4px;
+    width: 60px;
+    background: rgb(230, 88, 38);
+}
+
+.attorneys h1 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 10px 0px 15px;
+}
+
+.attorneys p {
+    color: rgb(163, 160, 204);
+    font-size: 16px;
+}
+
+.attorneys h3 {
+    text-transform: uppercase;
+    color: rgb(230, 88, 38);
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.attorneys_item {
+    position: relative;
+}
+
+.attorneys_item::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0%;
+    width: 100%;
+    height: 0px;
+    transition: all 0.4s ease-in-out 0s;
+    background: linear-gradient(rgba(56, 39, 113, 0.2) 45%, rgba(56, 39, 113, 0.2) 46%, rgb(56, 39, 113) 100%);
+}
+
+.attorneys_item:hover::before {
+    height: 100%;
+}
+
+.attorneys_content h3 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10%;
+    opacity: 0;
+    bottom: 0%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.attorneys_item:hover .attorneys_content h3 {
+    bottom: 12%;
+    opacity: 1;
+}
+
+.the_Languages {
+    padding: 50px 0px;
+}
+
+.Languages {
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.Languages span {
+    display: block;
+    height: 4px;
+    width: 70px;
+    background: rgb(230, 88, 38);
+    margin: auto auto 5px;
+}
+
+.Languages h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(54, 34, 111);
+}
+
+.antry {}
+
+.antry h1 {
+    text-transform: uppercase;
+    color: rgb(54, 34, 111);
+    font-size: 30px;
+}
+
+.antry p {
+    color: rgb(186, 181, 179);
+}
+
+.antry button {
+    border: none;
+    background: transparent;
+    color: rgb(230, 88, 38);
+    font-size: 16px;
+}
+
+.contact {
+    background: rgb(54, 34, 111);
+    padding: 65px;
+}
+
+.contact span {
+    display: block;
+    height: 4px;
+    width: 66px;
+    background: rgb(230, 88, 38);
+    margin: auto auto 15px;
+}
+
+.contact h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 65px;
+}
+
+.contact_form {}
+
+.contact_form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 6px 2px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(186, 181, 196);
+    color: rgb(255, 255, 255);
+    outline: none;
+    text-transform: capitalize;
+}
+
+.contact_form input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.contact_form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 2px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(186, 181, 196);
+    color: rgb(255, 255, 255);
+    outline: none;
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+
+.contact_form input[type="submit"] {
+    border: 1px solid rgb(230, 88, 38);
+    width: initial;
+    padding: 10px 40px;
+    margin-top: 40px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.contact_form input[type="submit"]:hover {
+    background-color: rgb(228, 79, 33);
+}
+
+footer {
+    background-color: #16102b;
+    padding: 20px 0;
+}
+.footer_icon{
+
+display: flex;
+
+justify-content: space-between;
+}
+
+.copyright {
+    
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.social_icon {}
+
+.social_icon ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social_icon ul li {
+    margin-left: 15px;
+}
+
+.social_icon ul li a {
+    text-decoration: none;
+    color: #dddddd;
+}
